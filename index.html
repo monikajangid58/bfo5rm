@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2-Part Responsive Layout</title>
+  <style>
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   
+   body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+    .form_login{
+    width: 100%;
+     max-width: 435px;
+     background: #fff;
+     box-shadow: 0 10px 20px rgba(0,0,0,0.15px);
+     padding: 41px 30px;
+     border-radius: 6px;
+  }
+   .form_login h3{
+    font-size: 20px;
+    text-align: center;
+   }
+   
+   .form_login .login_option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+   }
+   .form_login .login_option .option{
+    width: 100%;
+   }
+   .form_login .login_option .seperator{
+    position: relative;
+  
+
+  }
+  .form_login .login_option .option{
+width: calc(100% / 2 - 12px);
+  }
+.input_box label{
+font-weight: 500;
+display: block;
+margin-bottom: 8px;
+
+}
+
+ .form_login .login_option .option {
+  height: 56px;
+  display: flex;
+  background-color: #F8F8FB;
+  justify-content: center;
+  align-items: center;
+  gap:12px;
+  border-radius: 6px;
+  
+  margin: 34px 24px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #171645;
+  border: 1px solid #DADAF2;
+}
+.form_login .login_option .option a img{
+  max-width: 25px;
+}
+
+.input_box input{
+  height: 57px;
+  width: 100%;
+  padding: 0 20px;
+  font-size: 18px;
+  border-radius: 6px;
+  margin-bottom: 25px;
+}
+.input_box input:focus{
+  border-color: #626cd6;
+}
+ button{
+  height: 56px;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 28px;
+  outline: none;
+  background-color: #626CD6;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 500;
+  font-size: 18px;
+}
+form .input_box{
+  position: relative;
+}
+  </style>
+</head>
+<body>
+<div class="form_login">
+  <h3>Log in with</h3>
+  <div class="login_option">
+    <div class="option">
+      <img src="makeimages/logos/google.png" alt="">
+      <span>Google</span>
+    </div>
+    <div class="seperator">
+      <span>or</span>
+    </div>
+    <div class="option">
+<img src="makeimages\logos\apple.png" alt="">
+<span>Apple</span>
+    </div>
+  </div>
+<div class="wrapper">
+  <div class="input_box">
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Enter your email">
+  </div>
+  <div class="input_box">
+<label for="password">Password</label>
+<input type="password" id="password" placeholder="Enter a password">
+  </div>
+  <button type="submit">Log in</button>
+  <p>Don't have an account?<a href="#">sign up</a></p>
+</div>
+
+
+</div>
+
+</body>
+
+</html>
+
+
+    
+  
+
+
